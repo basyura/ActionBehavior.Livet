@@ -49,6 +49,7 @@
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
@@ -61,6 +62,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActionCommand.cs" />
+    <Compile Include="Container.cs" />
+    <Compile Include="IActionResolver.cs" />
     <Compile Include="Execute.cs" />
     <Compile Include="IActionCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

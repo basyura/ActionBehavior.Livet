@@ -96,11 +96,8 @@ namespace ActionBehavior.Livet
         /// <returns></returns>
         private string BuildClassName(ViewModel vm, string action)
         {
-            // 呼び出し対象のクラス名を生成
-            //var vmType = vm.GetType();
-            //var dir    = vmType.Name.Replace("ViewModel", "");
-            //var name   = vmType.FullName;
-            var clazz = "LivetSample.Actions." + action;
+            var resolver = Container.Instance.Resolver;
+            var clazz = resolver.Resolve(vm, action);
 
             return clazz;
         }
