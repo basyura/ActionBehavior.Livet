@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.Composition.Hosting;
+﻿using System.ComponentModel.Composition;
+using System.ComponentModel.Composition.Hosting;
+using System.Reflection;
 
 namespace ActionBehavior.Livet
 {
@@ -21,7 +23,11 @@ namespace ActionBehavior.Livet
 
         public Container()
         {
-            _container = new CompositionContainer(new DirectoryCatalog("."));
+            var dirCatalog = new DirectoryCatalog(".");
+            var exeCatalog = new AssemblyCatalog(Assembly.GetEntryAssembly());
+
+            var aggregateCatalog = new AggregateCatalog(exeCatalog, dirCatalog);
+            _container = new CompositionContainer(aggregateCatalog);
         }
 
         public IActionResolver Resolver { get => _container.GetExportedValue<IActionResolver>(); }
