@@ -17,7 +17,7 @@ https://www.nuget.org/packages/ActionBehavior.Livet/
 * Install [LivetCask.Mvvm](https://www.nuget.org/packages/LivetCask.Mvvm/) and ActionBehavior.Livet by NuGet.
 * Add a action resolver in your project.
 
-```cs:ActionResolver
+```cs
 using System.ComponentModel.Composition;
 using ActionBehavior.Livet;
 using Livet;
@@ -37,7 +37,7 @@ namespace Hoge
 
 * Add a action class.
 
-```cs:
+```cs
 using System;
 using System.Threading.Tasks;
 using Livet;
@@ -60,7 +60,7 @@ namespace Hoge
 
 * Call Excute on view (xaml)
 
-```xml:view (xaml)
+```xml
 <Window 
         ・・・(略)・・・
         xmlns:ab="clr-namespace:ActionBehavior.Livet;assembly=ActionBehavior.Livet"
@@ -68,7 +68,7 @@ namespace Hoge
 
 ```
   
-```xml:view (xaml)
+```xml
 <Button Content="Hello">
     <i:Interactions.Triggers>
       <i:EventTrigger EventName="Click">
