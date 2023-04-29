@@ -1,6 +1,6 @@
 # ActionBehavior.Livet
 
-Action Behavior for [Livet](https://github.com/runceel/Livet).
+Action Behavior for [Livet](https://github.com/runceel/Livet).  
 Provides a function to easily call an action class from View (xaml).
 
 ## License
