@@ -1,0 +1,6 @@
+#!sh
+
+cd ActionBehavior.Livet
+nuget pack  -Prop Configuration=Release
+
+

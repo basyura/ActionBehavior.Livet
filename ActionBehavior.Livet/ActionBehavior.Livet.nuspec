@@ -2,7 +2,8 @@
 <package >
   <metadata>
     <id>ActionBehavior.Livet</id>
-    <version>0.1.0</version>
+    <version>0.2.0</version>
+    <title>ActionBehavior.Livet</title>
     <authors>basyura</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
@@ -11,12 +12,6 @@
     <description>Action Behavior for Livet</description>
     <releaseNotes></releaseNotes>
     <copyright>$copyright$</copyright>
-    <tags>MVVM Livet</tags>
-    <dependencies>
-      <group targetFramework=".NETStandard2.1">
-        <dependency id="SampleDependency" version="1.0.0" />
-      </group>
-    </dependencies>
-    <readme>README.md</readme>
+    <tags>MVVM WPF Livet</tags>
   </metadata>
 </package>
