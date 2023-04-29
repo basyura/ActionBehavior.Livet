@@ -15,7 +15,7 @@ https://www.nuget.org/packages/ActionBehavior.Livet/
 ## SetUp
 
 * Install [LivetCask.Mvvm](https://www.nuget.org/packages/LivetCask.Mvvm/) and ActionBehavior.Livet by NuGet.
-* Add a action resolver in your project.
+* Add an action resolver in your project.
 
 ```cs
 using System.ComponentModel.Composition;
@@ -35,7 +35,7 @@ namespace Hoge
 }
 ```
 
-* Add a action class.
+* Add an action class.
 
 ```cs
 using System;
