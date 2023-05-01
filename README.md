@@ -35,6 +35,19 @@ namespace Hoge
 }
 ```
 
+* Add an ViewModel
+
+```cs
+using Livet;
+
+namespace Hoge
+{
+    public class MainWIndowViewModel : ViewModel
+    {
+    }
+}
+```
+
 * Add an action class.
 
 ```cs
@@ -44,7 +57,7 @@ using Livet;
 
 namespace Hoge
 {
-    public class Hello : ActionCommand<ViewModel>
+    public class Hello : ActionCommand<MainWindowViewModel>
     {
         public override Task<bool> Execute(object sender, EventArgs evnt, object parameter)
         {
@@ -64,7 +77,10 @@ namespace Hoge
 <Window 
         ・・・(略)・・・
         xmlns:ab="clr-namespace:ActionBehavior.Livet;assembly=ActionBehavior.Livet"
-
+        >
+    <Window.DataContext>
+        <vm:MainWindowViewModel/>
+    </Window.DataContext>
 
 ```
   
