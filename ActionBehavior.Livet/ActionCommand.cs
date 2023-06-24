@@ -31,7 +31,7 @@ namespace ActionBehavior.Livet
         /// </summary>
         /// <param name="action"></param>
         /// <param name="param"></param>
-        protected void ExecuteCommand(string action, string param = null)
+        protected void ExecuteCommand(string action, object param = null)
         {
             var cmd = new Execute()
             {

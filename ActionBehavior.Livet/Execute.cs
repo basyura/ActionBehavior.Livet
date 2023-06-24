@@ -13,7 +13,7 @@ namespace ActionBehavior.Livet
         /// <summary></summary>
         public string Action { get; set; }
         /// <summary></summary>
-        public string ActionParameter { get; set; }
+        public object ActionParameter { get; set; }
         /// <summary>
         /// 
         /// </summary>
@@ -55,7 +55,7 @@ namespace ActionBehavior.Livet
         /// <param name="cmd"></param>
         /// <param name="evnt"></param>
         /// <returns></returns>
-        private async Task<bool> InvokeAsync(IActionCommand cmd, object evnt, string param)
+        private async Task<bool> InvokeAsync(IActionCommand cmd, object evnt, object param)
         {
             return await cmd.Execute(AssociatedObject, evnt as EventArgs, param);
         }
